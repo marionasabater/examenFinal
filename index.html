@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header>
+            <!-- barra superior del menu -->
+            <section class="headerMenu">
+                <nav>
+                <a class="headerMenu__inicio--activo" href="#">Inicio</a>
+                <a class="headerMenu__productos" href="#">Productos</a>
+                <a class="headerMenu__servicios" href="#">Servicios</a>
+                </nav>
+                
+                <a class="btn cta" href="#">Comprar ya!</a>
+                
+            </section>
+
+            <!-- banner inferior del header -->
+            <section class="headerBanner">
+                <article class="headerBanner__izq" >
+                    <h2 class="headerBanner__izq__logo">LOGOTIPO</h2>
+
+                    <article class="textoYboton">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis sapien ac eget orci lectus a. Tellus integer accumsan aliquet arcu cras tristique. Semper proin porta adipiscing faucibus. Eu scelerisque ornare nunc, venenatis fringilla tincidunt consectetur.</p>
+                    <a class="btn" href="#">Leer más</a>
+                    </article>
+
+                </article>
+
+                <article class="headerBanner__dxa" >
+                    <h3 class="headerBanner__dxa__soloDesktop">Nueva Cámara, con Nueva Lente</h3>
+
+                    <picture>
+
+                    <!-- smartphone -->
+                    <source
+                        srcset="
+                        ./img/smartphone/camara_frente.jpg 1x,
+                        ./img/smartphone/camara_frente@2x.jpg 2x,
+                        ./img/smartphone/camara_frente@3x.jpg 3x
+                        "
+                        media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+                    />
+                                    
+                    <!-- tablet -->	
+                    <source
+                                    srcset="
+                                   ./img/tablet/ .jpg 1x,
+                                   ./img/tablet/ @2x.jpg 2x,
+                                   ./img/tablet/ @3x.jpg 3x
+                                   "
+                                 media="(min-width:768px) and (orientation: portrait)"
+                    />		
+                        
+                    <!-- escritorio -->
+                    <source
+                        srcset="
+                        ./img/desktop/camara_frente.jpg 1x,
+                        ./img/desktop/camara_frente@2x.jpg 2x,
+                        ./img/desktop/camara_frente@3x.jpg 3x
+                        "
+                        media="(min-width:1200px)"
+                    />
+                        
+                    <!-- Imagen de respaldo -->
+                    <img class= "camaraFrente" src="" alt="" />
+                        
+                    </picture>                    
+                </article>
+            </section>
+        </header>
+
+        <!-- MAIN -->
+        <main>
+
+        <!-- main parte superior -->
+        <section class="camaraArriba">
+
+            <article class="camaraArriba__texto">
+                <article>
+                    <h5 class="titulo">Opción 1</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, perspiciatis facere quisquam suscipit neque inventore?</p>
+                </article>
+                <article>
+                <h5 class="titulo">Opción 2</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, perspiciatis facere quisquam suscipit neque inventore?</p>
+                </article>
+            </article>
+
+            <picture>
+            <!-- smartphone -->
+            <source
+                    srcset="
+                    ./img/smartphone/camara_arriba.jpg 1x,
+                    ./img/smartphone/camara_arriba@2x.jpg 2x,
+                    ./img/smartphone/camara_arriba@3x.jpg 3x
+                    "
+                    media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+                />
+                                
+                <!-- tablet -->	
+                <source
+                                srcset="
+                               ./img/tablet/ .jpg 1x,
+                               ./img/tablet/ @2x.jpg 2x,
+                               ./img/tablet/ @3x.jpg 3x
+                               "
+                             media="(min-width:768px) and (orientation: portrait)"
+                />		
+                    
+                <!-- escritorio -->
+                <source
+                    srcset="
+                    ./img/desktop/camara_arriba.jpg 1x,
+                    ./img/desktop/camara_arriba@2x.jpg 2x,
+                    ./img/desktop/camara_arriba@3x.jpg 3x
+                    "
+                    media="(min-width:1200px)"
+                />
+                    
+                <!-- Imagen de respaldo -->
+                <img class= "camaraArriba__foto" src="" alt="" />
+                    
+            </picture>   
+
+            <article class="camaraArriba__texto">
+                <article>
+                    <h5 class="titulo">Opción 3</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, perspiciatis facere quisquam suscipit neque inventore?</p>
+                </article>
+                <article>
+                <h5 class="titulo">Opción 4</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, perspiciatis facere quisquam suscipit neque inventore?</p>
+                </article>
+            </article>
+
+        </section>
+
+        <!-- main parte inferior -->
+        <section class="lente">
+            
+            <picture>
+                <!-- smartphone -->
+                <source
+                        srcset="
+                        ./img/smartphone/lente.jpg 1x,
+                        ./img/smartphone/lente@2x.jpg 2x,
+                        ./img/smartphone/lente@3x.jpg 3x
+                        "
+                        media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+                    />
+                                    
+                    <!-- tablet -->	
+                    <source
+                                    srcset="
+                                   ./img/tablet/ .jpg 1x,
+                                   ./img/tablet/ @2x.jpg 2x,
+                                   ./img/tablet/ @3x.jpg 3x
+                                   "
+                                 media="(min-width:768px) and (orientation: portrait)"
+                    />		
+                        
+                    <!-- escritorio -->
+                    <source
+                        srcset="
+                        ./img/desktop/lente.jpg 1x,
+                        ./img/desktop/lente@2x.jpg 2x,
+                        ./img/desktop/lente@3x.jpg 3x
+                        "
+                        media="(min-width:1200px)"
+                    />
+                        
+                    <!-- Imagen de respaldo -->
+                    <img class= "lente__foto" src="" alt="" />
+                        
+                </picture>
+            
+            <article>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictumst proin augue habitant nibh condimentum. Mi imperdiet enim aliquam enim proin tellus, fringilla et et. Ultrices lobortis in risus suspendisse eget rhoncus, mauris, lobortis. In tincidunt bibendum at in cursus. Eleifend faucibus turpis quis justo amet maecenas quis. Suscipit nibh sem est at. A lectus euismod metus, pretium id. Leo ac elementum diam eget massa consectetur. Adipiscing maecenas sit gravida tincidunt posuere aenean semper auctor. Placerat sit quam mattis integer amet cursus.</p> 
+            <p>Turpis non magna risus libero, volutpat, et. Tortor elementum magna odio nulla. Id fermentum sapien eu nunc tristique id. Egestas purus venenatis interdum odio est ipsum faucibus maecenas. Ultricies sit erat ac nunc velit. Etiam neque blandit pharetra orci sed amet. Ultricies nec, vulputate suspendisse auctor risus massa vel, viverra pulvinar. Malesuada dignissim feugiat morbi sit dolor urna. A et ipsum sollicitudin phasellus ultricies. Suscipit et et platea eget in faucibus. Vitae amet, malesuada erat praesent. Enim, lacinia enim placerat mi morbi dui sapien eget. Sapien convallis sed quis amet tellus in sed quam id.</p>
+            </article>
+        </section>
+
+        </main>
+
+        <!-- FOOTER -->
+        <footer>
+
+        <!-- footer listas -->
+        <section class="footer__listas">
+
+            
+            <article class="empresa">
+            <h5 class="titulo">Empresa</h5>
+            <ul>
+                <li><a href="#"></a>Quienes somos</li>
+                <li><a href="#"></a>Historia</li>
+            </ul>
+            </article>
+
+            <article class="comunidad">
+            <h5 class="titulo">Comunidad</h5>
+            <ul>
+                <li><a href="#"></a>Eventos</li>
+                <li><a href="#"></a>Blog</li>
+                <li><a href="#"></a>Foros</li>
+            </ul>
+            </article>
+            
+
+            <article class="contactar">
+                <h5 class="titulo">Contactar</h5>
+                <ul>
+                    <li><a href="#"></a>Formulario</li>
+                    <li><a href="#"></a>+34 666 66 66 66</li>
+                </ul>
+                </article>
+            
+
+            <article class="redes">
+                <h5 class="titulo">Redes</h5>
+                <ul>
+                    <li><a href="www.twitter.es"></a>Twitter</li>
+                    <li><a href="www.pinterest.es"></a>Pinterest</li>
+                    <li><a href="www.instagram.es"></a>Instagram</li>
+                </ul>
+                </article>
+            
+
+            <article class="newsletter">
+            <input type="email" placeholder="tu email">
+            <button type="submit">Noticias</button>
+            </article>
+        </section>
+
+        <!-- footer copyright -->
+        <section class="copy">
+                <h5>Copyright &copy; 2021 - Examen Áliad Junio</h5>
+        </section>
+
+
+        </footer>
+    </body>
+</html>

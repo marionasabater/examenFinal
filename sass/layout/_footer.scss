@@ -1,0 +1,47 @@
+/* @FOOTER */
+/* ********** */
+
+footer {background-color: map-get($colores, gris);}
+
+
+.footer__listas {   display: flex;
+                    flex-direction: row;
+                    @media only screen and (min-width:360px) and (max-width:450px) and (orientation:portrait) {
+                        flex-direction: column;
+                        text-align: center;}
+
+                    justify-content: space-between;
+                    padding: 0px 20px;
+
+                        ul {padding: 0;}
+
+                        li {padding-bottom: 5px;}
+
+                    }
+
+.newsletter {display: flex;
+            align-items: center;
+            
+            button {
+                background-color: map-get($colores, naranja);
+                color:map-get($colores, blanco);
+                padding: 5px;
+                border-style: none;
+                border-radius: 10px; 
+            }
+            
+        }
+
+.copy {text-align: center;
+        height: 30px;
+        @media only screen and (min-width:360px) and (max-width:450px) and (orientation:portrait) 
+        {height: 60px;}
+        }
+
+
+        /* ajustes para móvil en footer */
+
+    @media only screen and (min-width:360px) and (max-width:450px) and (orientation:portrait) 
+    {
+    .newsletter {justify-content: center;}
+    }

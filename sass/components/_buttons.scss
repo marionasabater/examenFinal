@@ -1,0 +1,11 @@
+/* @BOTONES */
+/* ********** */
+
+// Botón standard <a>
+.btn{
+    padding: .9375rem;
+    font-size: 1.125rem;
+    color: map-get($colores, blanco);
+    background-color: map-get($colores, naranja);
+    
+}

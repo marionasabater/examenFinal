@@ -1,0 +1,92 @@
+/* @HEADERS */
+/* ********** */
+
+header {display: flex;
+        flex-direction: column;
+    
+    .headerMenu, .headerBanner {
+                display: flex;
+                flex-direction: row;
+                @media only screen and (min-width:360px) and (max-width:450px) and (orientation:portrait) 
+                {flex-direction: column;}
+            }
+
+    /* header superior nav */
+
+    .headerMenu {justify-content: center;
+                align-items: center;
+                width: 100%;
+                
+                
+            nav a   {color:map-get($colores, negro);
+                    padding: map-get($margenes, navHorizontal);
+                    }
+            nav {
+                flex-basis:1300px;
+                @media only screen and (min-width:360px) and (max-width:450px) and (orientation:portrait) 
+                {flex-basis:0px;}
+
+                text-align: center;}
+            
+            .headerMenu__inicio--activo {color: map-get($colores, naranja)}
+
+            .btn.cta {justify-self: flex-end;}
+                }
+
+    
+
+
+
+    /* header inferior banner */
+
+    .headerBanner {
+        background-color: map-get($colores, salmón);
+        padding: 0px 20px;
+
+            h2 {font-size: 80px;
+                }
+
+            .headerBanner__izq {display: flex;
+                                flex-direction: column;
+                                
+                                justify-content: flex-start;
+                                width: 60%;
+                            }  
+
+            p { width: 600px;
+                padding-bottom: 20px;}
+
+            .btn.cta {width: 120px;
+                text-align: center;}
+
+            .headerBanner__dxa{ text-align: center;}
+
+            h3 {font-family: $fontFamily-bold;
+                font-size: 36px;
+                font-weight: 900;}
+        
+        }
+
+
+    /* ajustes para móvil header (perdón Toni no lo sabido hacer de otra manera)*/
+
+        @media only screen and (min-width:360px) and (max-width:450px) and (orientation:portrait) 
+        {
+        .headerMenu {display: flex;
+                    flex-direction: column;}
+            nav {display: flex;
+                flex-direction: column;
+                width: 100%;
+                padding: 5px 10px;
+
+                a {background-color: map-get($colores, salmón);}
+            
+                .btn.cta {order:1;}
+
+                .headerMenu__inicio--activo {display:none;}
+                }
+
+        .headerBanner__dxa__soloDesktop {display:none;}
+        } 
+
+    }
